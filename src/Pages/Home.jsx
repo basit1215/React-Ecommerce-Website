@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Button from '../components/Button'
 
 const Home = () => {
 
@@ -38,8 +39,8 @@ const Home = () => {
               <p className=' font-bold text-2xl mb-3'> Title: {item.title}</p>
               <p className='font-semibold text-xl mb-3'>Price: {item.price}</p>
               <p className='font-medium text-xl mb-3'>Category: {item.category}</p>
-              <button onClick={() => checkDetails(item)} className='border rounded-lg bg-gray-600 text-white p-3 mt-3'>Check Details</button>
-              {/* <p className='font-normal text-sm mb-3'>Description: {item.description}</p> */}
+              <button onClick={() => checkDetails(item)} className='font-bold border rounded-lg bg-gray-600 text-white p-3 mt-3    hover:bg-white hover:text-gray-600 hover:border-gray-600 hover:border-2'>Check Details</button>
+      
 
             </div>
           </div>

@@ -79,7 +79,7 @@ const SingleCardDetails = (item) => {
 
 
 
-<div className="bg-gray-600 w-full h-auto py-10 px-4 sm:px-6 md:px-8 lg:px-24 flex justify-center items-center">
+<div className="bg-gray-600 w-full   py-10 px-4 sm:px-6 md:px-8 lg:px-24 flex justify-center items-center h-[90vh]">
   {singleCardData ? (
     <div className="flex flex-col sm:flex-row shadow-[0_0_70px_0px_rgba(0,0,0,0.8)] bg-white rounded-3xl border border-black overflow-hidden">
 

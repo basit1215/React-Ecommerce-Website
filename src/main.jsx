@@ -6,7 +6,7 @@ import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Service from './Pages/Service.jsx'
-import SingleCardDetails from './Pages/singleCardDetails.jsx'
+import SingleCardDetails from './Pages/SingleCardDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,20 +20,6 @@ const router = createBrowserRouter([
       {
         path: "about",
         element:  <About/>,
-        children: [
-          {
-            path: "",
-            element: <h1>Software Developer</h1>
-          },
-          {
-            path: "designer",
-            element: <h1>Graphics Designer</h1>
-          },
-          {
-            path: "editor",
-            element: <h1>Video Editor</h1>
-          }
-        ]
       },
       {
         path: "contact",
@@ -45,7 +31,7 @@ const router = createBrowserRouter([
       },
       {
         path: "singleCardDetails/:id",
-        element: <SingleCardDetails/>
+        element:  <SingleCardDetails/>
       },
       {
         path: "*",
